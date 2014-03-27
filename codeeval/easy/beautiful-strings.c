@@ -30,6 +30,8 @@ main (int argc, char *argv[])
 		for (i = 25; times[i]; i -= 1) {
 			sum += ((i+1) * times[i]);
 		}
+		free(times);
+		times = NULL;
 		printf("%d\n", sum);
 	}
 	return 0;
